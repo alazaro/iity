@@ -12,6 +12,7 @@ TRANSLATIONS = {
     'YES': {
         'en': 'YES',
         'es': 'SI',
+        'de': 'JA',
     },
     'NO': {
         'de': 'NEIN'
