@@ -5,6 +5,9 @@ import os
 import random
 
 from flask import Flask, render_template, request
+import pytz
+
+
 app = Flask(__name__)
 
 
@@ -22,7 +25,8 @@ TRANSLATIONS = {
 
 @app.route("/")
 def index():
-    is_thursday = datetime.now().isoweekday() == 4
+    is_thursday = datetime.now(
+        pytz.timezone('Europe/Madrid')).isoweekday() == 4
     img = get_image(is_thursday)
     return render_template(
         'index.html',
