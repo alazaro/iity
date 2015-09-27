@@ -52,7 +52,7 @@ def index(img_hash=None):
 
 def get_img_from_hash(img_hash, is_thursday):
     img_path = img_hash_cache[is_thursday].get(
-        img_hash, get_image(is_thursday))
+        img_hash, get_image(is_thursday)[1])
     return img_path
 
 
