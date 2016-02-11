@@ -16,6 +16,11 @@ img_hash_cache = {
 }
 
 
+
+
+
+
+
 TRANSLATIONS = {
     'YES': {
         'en': 'YES',
